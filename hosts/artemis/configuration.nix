@@ -50,16 +50,6 @@
     variant = "";
   };
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users = {
-    charly = {
-      isNormalUser = true;
-      initialPassword = "12345";
-      extraGroups = [ "wheel" ];
-      packages = [ inputs.home-manager.packages.${pkgs.system}.default ];
-    };
-  };
-
   home-manager = {
     useUserPackages = true;
     extraSpecialArgs = { inherit inputs outputs; };
