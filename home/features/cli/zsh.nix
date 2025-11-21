@@ -1,5 +1,5 @@
 {config, lib, pkgs,...}: {
-let
+  with lib; let
   cfg = config.features.cli.zsh;
   in {
   options.features.cli.zsh.enable = mkEnableOption "Enable extended zsh configuration";
@@ -20,5 +20,4 @@ let
       };
     };
   };
-}
 }
