@@ -10,5 +10,5 @@
     ];
     packages = [inputs.home-manager.packages.${pkgs.system}.default];
   };
-  home-manager.users.charly = import ../../home/charly/${config.networking.hostName}.nix;
+  home-manager.users.charly = import ../../../home/charly/${config.networking.hostName}.nix;
 }
