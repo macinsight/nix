@@ -4,7 +4,7 @@
     extraOptions = ["-l" "--icons" "--git" "-a"];
   };
   programs.bat = {enable=true;};
-  home.packages = with pkgs; {
+  home.packages = with pkgs; [
     coreutils
     fd
     htop
@@ -13,6 +13,6 @@
     ripgrep
     tldr
     zip
-  };
+  ];
 
 }
