@@ -1,7 +1,7 @@
 { config, pkgs, inputs, ...}:
 
 {
-  users.user.charly = {
+  users.users.charly = {
     initialHashedPassword = "$y$j9T$cGyQIKS/KDXRHcvcXU0lQ1$BJC6hwZ/kOHdvL4.wDgaKxs.nwIXAoh.sn9jAv5di1D";
     isNormalUser = true;
     description = "The best hackeress on the planet! :3";
