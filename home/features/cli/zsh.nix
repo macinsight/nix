@@ -11,9 +11,6 @@ in
   config = mkIf cfg.enable {
     programs.zsh = {
       enable = true;
-      enableCompletions = true;
-      autosuggestion.enable = true;
-      syntaxHighlighting.enable = true;
       shellAliases = {
         ls = "eza";
       };
