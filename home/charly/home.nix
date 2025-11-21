@@ -5,7 +5,7 @@
   home.homeDirectory = lib.mkDefault "/home/${config.home.username}";
   home.stateVersion = "24.05"; # Please read the comment before changing.
   home.packages = [
-    "kitty"
+    pkgs.kitty
   ];
   home.sessionVariables = {
   };
