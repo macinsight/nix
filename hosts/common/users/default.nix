@@ -1,1 +1,1 @@
-{imports = [./charly.nix];};
+{imports = [./charly.nix];}
