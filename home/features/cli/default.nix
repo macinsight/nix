@@ -1,4 +1,5 @@
 {pkgs, ...}: {
+  imports = [./zsh.nix];
   programs.eza = {
     enable = true;
     extraOptions = ["-l" "--icons" "--git" "-a"];
