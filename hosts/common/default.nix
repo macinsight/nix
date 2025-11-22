@@ -35,7 +35,10 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.zsh;
-  programs.zsh.initContent = "zsh-newuser-install() { :; }";
+  programs.zsh.shellInit =''
+    # Disable new-user-configuration-popup for zsh
+    "zsh-newuser-install() {:;}
+  '';
 
 
   ## Disable password requests for nixos-rebuild switch
