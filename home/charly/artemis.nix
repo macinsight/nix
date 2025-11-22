@@ -3,6 +3,7 @@
     ./home.nix
     ../common
     ../features/cli
+    ../features/desktop
   ];
   features = {
     cli = {
