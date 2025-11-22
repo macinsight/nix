@@ -4,6 +4,7 @@
     ../common
     ../features/cli
     ../features/desktop
+    ./dotfiles
   ];
   features = {
     cli = {
