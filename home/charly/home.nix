@@ -3,7 +3,7 @@
 {
   home.username = lib.mkDefault "charly";
   home.homeDirectory = lib.mkDefault "/home/${config.home.username}";
-  home.stateVersion = "25.05"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; # Please read the comment before changing.
   home.packages = with pkgs; [
     kitty
     wofi
