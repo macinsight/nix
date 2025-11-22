@@ -30,7 +30,7 @@ in {
         ];
 
         input = {
-          kb_layout = "de,us";
+          kb_layout = "us";
           kb_variant = "";
           kb_model = "";
           kb_rules = "";
@@ -53,78 +53,6 @@ in {
           layout = "dwindle";
         };
 
-        decoration = {
-          "col.shadow" = "rgba(1E202966)";
-          drop_shadow = true;
-          shadow_range = 60;
-          shadow_offset = "1 2";
-          shadow_render_power = 3;
-          shadow_scale = 0.97;
-          rounding = 8;
-          blur = {
-            enabled = true;
-            size = 3;
-            passes = 3;
-          };
-          active_opacity = 0.9;
-          inactive_opacity = 0.5;
-        };
-
-        animations = {
-          enabled = true;
-          bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
-          animation = [
-            "windows, 1, 7, myBezier"
-            "windowsOut, 1, 7, default, popin 80%"
-            "border, 1, 10, default"
-            "borderangle, 1, 8, default"
-            "fade, 1, 7, default"
-            "workspaces, 1, 6, default"
-          ];
-        };
-
-        dwindle = {
-          pseudotile = true;
-          preserve_split = true;
-        };
-
-        master = {};
-
-        gestures = {
-          workspace_swipe = false;
-        };
-
-        windowrule = [
-          "float, file_progress"
-          "float, confirm"
-          "float, dialog"
-          "float, download"
-          "float, notification"
-          "float, error"
-          "float, splash"
-          "float, confirmreset"
-          "float, title:Open File"
-          "float, title:branchdialog"
-          "float, Lxappearance"
-          "float, Wofi"
-          "float, dunst"
-          "animation none,Wofi"
-          "float,viewnior"
-          "float,feh"
-          "float, pavucontrol-qt"
-          "float, pavucontrol"
-          "float, file-roller"
-          "fullscreen, wlogout"
-          "float, title:wlogout"
-          "fullscreen, title:wlogout"
-          "idleinhibit focus, mpv"
-          "idleinhibit fullscreen, firefox"
-          "float, title:^(Media viewer)$"
-          "float, title:^(Volume Control)$"
-          "float, title:^(Picture-in-Picture)$"
-          "size 800 600, title:^(Volume Control)$"
-          "move 75 44%, title:^(Volume Control)$"
-        ];
 
         "$mainMod" = "SUPER";
 
@@ -177,11 +105,6 @@ in {
           "$mainMod, mouse:273, resizewindow"
         ];
 
-        windowrulev2 = [
-          "workspace 1,class:(Emacs)"
-          "workspace 3,opacity 1.0, class:(brave-browser)"
-          "workspace 4,class:(com.obsproject.Studio)"
-        ];
       };
     };
   };
