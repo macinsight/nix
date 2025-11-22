@@ -19,7 +19,6 @@ in
         plugins = [ "git" ];
         theme = "agnoster";
       };
-      initContent = "zsh-newuser-install() { :; }";
     };
   };
 }
