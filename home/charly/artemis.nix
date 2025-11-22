@@ -16,7 +16,6 @@
       wayland.enable = true;
       hyprland.enable = true;
       firefox.enable = true;
-      thunderbird.enable = true;
     };
   };
 }
