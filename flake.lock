@@ -1,5 +1,21 @@
 {
   "nodes": {
+    "dotfiles": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1763821583,
+        "narHash": "sha256-biyBKQRILA3ePsOrFZAxdnJvtZHHIjQ14cKVBsr9ONs=",
+        "ref": "refs/heads/main",
+        "rev": "4120ef3b968107e084bf6788292d9a0879ccc338",
+        "revCount": 1,
+        "type": "git",
+        "url": "https://github.com/macinsight/nixdots.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "https://github.com/macinsight/nixdots.git"
+      }
+    },
     "home-manager": {
       "inputs": {
         "nixpkgs": [
@@ -54,6 +70,7 @@
     },
     "root": {
       "inputs": {
+        "dotfiles": "dotfiles",
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable"
