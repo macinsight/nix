@@ -45,7 +45,7 @@
       nixosConfigurations = {
         artemis = nixpkgs.lib.nixosSystem {
           specialArgs = { inherit inputs outputs; };
-          modules = [ ./hosts/artemis ];
+          modules = [ ./hosts/artemis inputs.disko.nixosModules.disko];
         };
       };
       homeConfigurations = {
