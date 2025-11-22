@@ -8,8 +8,6 @@ in
   options.features.cli.neofetch.enable = mkEnableOption "Enable neofetch";
 
   config = mkIf cfg.enable {
-    programs.neofetch = {
-      enable = true;
-    };
+    home.packages = with pkgs; [neofetch];
   };
 }
