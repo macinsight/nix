@@ -21,9 +21,13 @@
       url = "github:/macinsight/nixdots";
       flake = false;
     };
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, dotfiles, home-manager, nixpkgs, ... }@inputs:
+  outputs = { self, dotfiles, home-manager, disko, nixpkgs, ... }@inputs:
     let
       inherit (self) outputs;
       systems = [
