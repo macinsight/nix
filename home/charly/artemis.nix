@@ -8,6 +8,7 @@
     cli = {
       fzf.enable = true;
       zsh.enable = true;
+      neofetch.enable = true;
     };
   };
 }
