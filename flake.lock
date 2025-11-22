@@ -3,17 +3,17 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1763821583,
-        "narHash": "sha256-biyBKQRILA3ePsOrFZAxdnJvtZHHIjQ14cKVBsr9ONs=",
-        "ref": "refs/heads/main",
-        "rev": "4120ef3b968107e084bf6788292d9a0879ccc338",
-        "revCount": 1,
-        "type": "git",
-        "url": "https://github.com/macinsight/nixdots.git"
+        "lastModified": 1763824974,
+        "narHash": "sha256-SOTA4F0Am7kwqrjM3c2dIntF3junHJLcsJZYf8hpal8=",
+        "owner": "macinsight",
+        "repo": "nixdots",
+        "rev": "2305054b44800adf412e432698d6e60e11c961af",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "https://github.com/macinsight/nixdots.git"
+        "owner": "macinsight",
+        "repo": "nixdots",
+        "type": "github"
       }
     },
     "home-manager": {
