@@ -35,8 +35,6 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.zsh;
-  system.userActivationScripts.zshrc = "touch .zshrc";
-
 
   ## Disable password requests for nixos-rebuild switch
   security.sudo = {
