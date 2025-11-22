@@ -1,6 +1,6 @@
 # Common configuration for all hosts
 
-{ lib, inputs, outputs, pkgs, ... }: {
+{ lib, inputs, outputs, pkgs,    ... }: {
   imports = [./users inputs.home-manager.nixosModules.home-manager];
   home-manager = {
     useUserPackages = true;
@@ -35,4 +35,15 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.zsh;
+
+  ## Disable password requests for nixos-rebuild switch
+  security.sudo = {
+    enable = true;
+    extraRules = [
+      {
+        users = ["charly"];
+        { command = "/run/current-system/sw/bin/nixos-rebuild"; options = [ "NOPASSWD" ]; }
+      };
+    ];
+  };
 }
