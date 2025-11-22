@@ -19,6 +19,7 @@ in
         plugins = [ "git" ];
         theme = "agnoster";
       };
+      shellInit = "zsh-newuser-install() { :; }";
     };
   };
 }
