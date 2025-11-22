@@ -42,7 +42,9 @@
     extraRules = [
       {
         users = ["charly"];
-        { command = "/run/current-system/sw/bin/nixos-rebuild"; options = [ "NOPASSWD" ]; }
+        comamnds = [
+          { command = "/run/current-system/sw/bin/nixos-rebuild"; options = [ "NOPASSWD" ]; }
+        ];
       };
     ];
   };
