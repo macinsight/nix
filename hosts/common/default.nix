@@ -41,11 +41,11 @@
     enable = true;
     extraRules = [
       {
-        users = ["charly"];
-        comamnds = [
+        users = [ "youruser" ];
+        commands = [
           { command = "/run/current-system/sw/bin/nixos-rebuild"; options = [ "NOPASSWD" ]; }
         ];
-      };
+      }
     ];
   };
 }
