@@ -14,6 +14,8 @@
     };
     desktop = {
       wayland.enable = true;
+      firefox.enable = true;
+      thunderbird.enable = true;
     };
   };
 }
