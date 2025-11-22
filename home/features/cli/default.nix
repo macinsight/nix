@@ -3,6 +3,7 @@
   programs.eza = {
     enable = true;
     extraOptions = ["-l" "--icons" "--git" "-a"];
+    enableZshIntegration = true;
   };
   programs.bat = {enable=true;};
   home.packages = with pkgs; [
