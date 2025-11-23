@@ -8,6 +8,7 @@
     kitty
     wofi
     ashell
+    unzip
   ];
   home.sessionVariables = {
   };
