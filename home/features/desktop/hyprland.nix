@@ -34,7 +34,6 @@ in {
           kb_variant = "";
           kb_model = "";
           kb_rules = "";
-          kb_options = "ctrl:nocaps";
           follow_mouse = 1;
 
           touchpad = {
@@ -57,8 +56,7 @@ in {
         "$mainMod" = "SUPER";
 
         bind = [
-          "$mainMod, return, exec, kitty -e zellij-ps"
-          "$mainMod, t, exec, kitty -e fish -c 'neofetch; exec fish'"
+          "$mainMod, return, exec, kitty 
           "$mainMod SHIFT, e, exec, kitty -e zellij_nvim"
           "$mainMod, o, exec, thunar"
           "$mainMod, Escape, exec, wlogout -p layer-shell"
@@ -66,10 +64,8 @@ in {
           "$mainMod, q, killactive"
           "$mainMod, M, exit"
           "$mainMod, F, fullscreen"
-          "$mainMod, V, togglefloating"
           "$mainMod, D, exec, wofi --show drun --allow-images"
           "$mainMod SHIFT, S, exec, bemoji"
-          "$mainMod, P, exec, wofi-pass"
           "$mainMod SHIFT, P, pseudo"
           "$mainMod, J, togglesplit"
           "$mainMod, left, movefocus, l"
@@ -96,8 +92,6 @@ in {
           "$mainMod SHIFT, 8, movetoworkspace, 8"
           "$mainMod SHIFT, 9, movetoworkspace, 9"
           "$mainMod SHIFT, 0, movetoworkspace, 10"
-          "$mainMod, mouse_down, workspace, e+1"
-          "$mainMod, mouse_up, workspace, e-1"
         ];
 
         bindm = [

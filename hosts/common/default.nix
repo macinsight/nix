@@ -35,6 +35,7 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.zsh;
+  services.tailscale.enable = true;
 
   ## Disable password requests for nixos-rebuild switch
   security.sudo = {
