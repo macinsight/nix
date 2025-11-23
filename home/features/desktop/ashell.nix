@@ -11,6 +11,7 @@ in {
   config = mkIf cfg.enable {
     programs.ashell = {
       enable = true;
+      settings = {};
     };
   };
 }
