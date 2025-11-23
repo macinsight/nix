@@ -56,7 +56,7 @@ in {
         "$mainMod" = "SUPER";
 
         bind = [
-          "$mainMod, return, exec, kitty 
+          "$mainMod, return, exec, kitty"
           "$mainMod SHIFT, e, exec, kitty -e zellij_nvim"
           "$mainMod, o, exec, thunar"
           "$mainMod, Escape, exec, wlogout -p layer-shell"
