@@ -22,13 +22,10 @@
 
 services.tailscale.enable = true;
 
-  # Enable networking
   networking.networkmanager.enable = true;
 
-  # Set your time zone.
   time.timeZone = "Europe/Berlin";
 
-  # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
   i18n.extraLocaleSettings = {
@@ -43,7 +40,6 @@ services.tailscale.enable = true;
     LC_TIME = "de_DE.UTF-8";
   };
 
-  # Configure keymap in X11
   services.xserver.xkb = {
     layout = "eu";
     variant = "";
@@ -67,6 +63,7 @@ services.tailscale.enable = true;
   environment.systemPackages = with pkgs; [
     neovim
     git
+    steam
   ];
 
   programs.zsh.enable = true;
