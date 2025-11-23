@@ -7,11 +7,6 @@
     extraSpecialArgs = { inherit inputs outputs; };
   };
   nixpkgs = {
-    overlays = [
-      outputs.overlays.additions
-      outputs.overlays.modifications
-      outputs.overlays.stable-packages
-    ];
     config = {
       allowUnfree = true;
     };
@@ -35,7 +30,6 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.zsh;
-  services.tailscale.enable = true;
 
   ## Disable password requests for nixos-rebuild switch
   security.sudo = {
