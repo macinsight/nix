@@ -20,6 +20,8 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
 
+programs.tailscale.enable = true;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
