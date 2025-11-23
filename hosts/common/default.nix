@@ -30,13 +30,14 @@
     nixPath = [ "/etc/nix/path" ];
   };
   users.defaultUserShell = pkgs.zsh;
-
+  services.udisks2.enable = true;
+  
   ## Disable password requests for nixos-rebuild switch
   security.sudo = {
     enable = true;
     extraRules = [
       {
-        users = [ "youruser" ];
+        users = [ "charly" ];
         commands = [
           { command = "/run/current-system/sw/bin/nixos-rebuild"; options = [ "NOPASSWD" ]; }
         ];
