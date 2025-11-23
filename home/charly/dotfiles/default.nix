@@ -2,8 +2,6 @@
 let
   configDirs = [
     "nvim"
-    "waybar"
-    "ashell"
     "kitty"
   ];
 
