@@ -16,7 +16,7 @@
       wayland.enable = true;
       hyprland.enable = true;
       firefox.enable = true;
-      ashell.enable;
+      ashell.enable = true;
     };
   };
 }
