@@ -3,6 +3,7 @@ let
   configDirs = [
     "nvim"
     "kitty"
+    "ashell"
   ];
 
   mkConfigDir = name: {
