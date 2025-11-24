@@ -64,6 +64,7 @@ services.tailscale.enable = true;
     neovim
     git
     upower
+    pinentry-all
   ];
 
   programs.zsh.enable = true;
