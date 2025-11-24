@@ -11,5 +11,10 @@
     source = "${inputs.dotfiles}/kitty";
     recursive = true;
   };
+  home.file.".config/wofi" = {
+    source = "${inputs.dotfiles}/wofi";
+    recursive = true;
+  };
+
 }
 
