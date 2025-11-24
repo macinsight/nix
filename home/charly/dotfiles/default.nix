@@ -7,6 +7,9 @@
     source = "${inputs.dotfiles}/ashell";
     recursive = true;
   };
-
+    home.file.".config/kitty" = {
+    source = "${inputs.dotfiles}/kitty";
+    recursive = true;
+  };
 }
 
