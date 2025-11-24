@@ -63,7 +63,7 @@ services.tailscale.enable = true;
   environment.systemPackages = with pkgs; [
     neovim
     git
-    steam
+    upower
   ];
 
   programs.zsh.enable = true;
