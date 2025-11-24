@@ -15,6 +15,9 @@
     source = "${inputs.dotfiles}/wofi";
     recursive = true;
   };
-
+  home.file.".config/rbw" = {
+    source = "${inputs.dotfiles}/rbw";
+    recursive = true;
+  };
 }
 
