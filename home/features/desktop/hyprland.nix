@@ -54,8 +54,8 @@ in {
 
 
         windowrulev2 = [
-        "opacity 0.6, class:(kitty)";
-        "opacity 0.6, class:(firefox)";
+        "opacity 0.6, class:(kitty)"
+        "opacity 0.6, class:(firefox)"
         ];
 
         "$mainMod" = "SUPER";
