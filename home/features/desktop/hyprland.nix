@@ -54,7 +54,6 @@ in {
 
 
         windowrule = "opacity 0.8,class:kitty";
-        windowrule = "opacity 0.8,class:firefox";
 
         "$mainMod" = "SUPER";
 
