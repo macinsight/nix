@@ -9,6 +9,7 @@
     wofi
     ashell
     unzip
+    rbw
   ];
   home.sessionVariables = {
   };
