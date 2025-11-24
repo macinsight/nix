@@ -31,7 +31,7 @@
   };
   users.defaultUserShell = pkgs.zsh;
   services.udisks2.enable = true;
-  
+
   ## Disable password requests for nixos-rebuild switch
   security.sudo = {
     enable = true;
