@@ -53,11 +53,12 @@ in {
         };
 
 
+        windowrule = "opacity 0.6,class:kitty";
+
         "$mainMod" = "SUPER";
 
         bind = [
           "$mainMod, return, exec, kitty"
-          "$mainMod SHIFT, e, exec, kitty -e zellij_nvim"
           "$mainMod, o, exec, thunar"
           "$mainMod, Escape, exec, wlogout -p layer-shell"
           "$mainMod, Space, togglefloating"
@@ -65,8 +66,6 @@ in {
           "$mainMod, M, exit"
           "$mainMod, F, fullscreen"
           "$mainMod, D, exec, wofi --show drun --allow-images"
-          "$mainMod SHIFT, S, exec, bemoji"
-          "$mainMod SHIFT, P, pseudo"
           "$mainMod, J, togglesplit"
           "$mainMod, left, movefocus, l"
           "$mainMod, right, movefocus, r"
