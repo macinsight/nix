@@ -9,7 +9,9 @@
     wofi
     ashell
     unzip
-    rbw
+    bitwarden-cli
+    swww
+    waypaper
   ];
   home.sessionVariables = {
   };
