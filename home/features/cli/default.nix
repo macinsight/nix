@@ -1,5 +1,5 @@
 {pkgs, ...}: {
-  imports = [./zsh.nix ./fzf.nix ./neofetch.nix];
+  imports = [./zsh.nix ./fzf.nix ./neofetch.nix ./khal.nix];
   programs.eza = {
     enable = true;
     extraOptions = ["-l" "--icons" "--git" "-a"];
@@ -15,6 +15,7 @@
     ripgrep
     tldr
     zip
+    khal
   ];
 
 }
