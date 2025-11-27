@@ -23,11 +23,11 @@
     "dotfiles": {
       "flake": false,
       "locked": {
-        "lastModified": 1764279464,
-        "narHash": "sha256-33AHUfKS8Wh0BxHFzaJRxZRuhzXXHLOe4EQfMK+gCks=",
+        "lastModified": 1764283200,
+        "narHash": "sha256-XdOgmgF3pwB+vccfEZGCyR4lbRGIFtvRsFYYw/WAluA=",
         "owner": "macinsight",
         "repo": "nixdots",
-        "rev": "d21e618be8e02b905329a1c2157f5e26ad0cdc79",
+        "rev": "5e46642fadaa54c854e818e81e41c6f9af4ff873",
         "type": "github"
       },
       "original": {
