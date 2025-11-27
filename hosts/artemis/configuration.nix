@@ -79,9 +79,13 @@ services.tailscale.enable = true;
   # };
 
   # List services that you want to enable:
-  services.vdirsyncer.enable = true;
   services.openssh.enable = true;
   services.fwupd.enable = true;
+
+fonts.packages = with pkgs; [
+  nerd-fonts.jetbrains-mono
+];
+
   virtualisation.libvirtd.enable = true;
   virtualisation.spiceUSBRedirection.enable = true;
   programs.virt-manager.enable = true;
