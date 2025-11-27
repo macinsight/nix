@@ -19,4 +19,8 @@
       firefox.enable = true;
     };
   };
+
+services.vdirsyncer.enable = true;
+programs.vdirsyncer.enable = true;
+
 }
