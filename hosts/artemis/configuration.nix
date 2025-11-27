@@ -19,7 +19,7 @@
   networking.hostName = "artemis"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
-
+virtualisation.docker.enable = true;
 services.tailscale.enable = true;
 
   networking.networkmanager.enable = true;
@@ -65,6 +65,7 @@ services.tailscale.enable = true;
     git
     upower
     pinentry-all
+    logseq
   ];
 
   programs.zsh.enable = true;
@@ -79,15 +80,11 @@ services.tailscale.enable = true;
 
   # List services that you want to enable:
 
-  # Enable the OpenSSH daemon.
-    services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
+  services.openssh.enable = true;
+  services.fwupd.enable = true;
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+  programs.virt-manager.enable = true;
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
   # on your system were taken. It‘s perfectly fine and recommended to leave

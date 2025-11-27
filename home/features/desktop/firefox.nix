@@ -16,16 +16,8 @@ in
         default = {
           id = 0;
           name = "default";
-
-          extensions = {
-            packages = with nur.repos.rycee.firefox-addons; [
-              ublock-origin
-              stylus
-              bitwarden
-            ];
-          };
-
           bookmarks = {
+            force = true;
             settings = [
               {
                 name    = "wikipedia";
