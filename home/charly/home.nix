@@ -14,7 +14,7 @@
   ];
  programs.neovim = {
 	 enable = true;
-	 package = pkgs.neovim-nightly;
+	 package = pkgs.neovim;
 	 vimAlias = true;
 	 vimdiffAlias = true;
 	 withNodeJs = true;
